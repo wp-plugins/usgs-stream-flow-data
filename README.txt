@@ -4,7 +4,7 @@ Donate link: http://www.kindredwebconsulting.com/wp-plugins/usgs
 Tags: USGS, River Flow, Stream Flow, Fly Fishing, Water Level
 Requires at least: 3.7
 Tested up to: 3.9
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,7 +61,7 @@ You can find the Site Code quickly and easily by searching for it based on state
 4. Showing USGS Without Graphs in a Post
 
 == Changelog ==
-= 1.0.6 =
+= 1.0.7 =
 Tested with 3.9
 Updated plugin Description to fit on WordPress.org
 Updated ScreenShots to match 3.9
@@ -83,7 +83,7 @@ Updated the zip file name to match WordPress created zip file.
 Starting Version
 
 == Upgrade Notice ==
-= 1.0.6 =
+= 1.0.7 =
 Tested with 3.9
 Updated plugin Description to fit on WordPress.org
 Updated ScreenShots to match 3.9
