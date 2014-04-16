@@ -4,11 +4,11 @@ Donate link: http://www.kindredwebconsulting.com/wp-plugins/usgs
 Tags: USGS, River Flow, Stream Flow, Fly Fishing, Water Level
 Requires at least: 3.7
 Tested up to: 3.9
-Stable tag: 1.0.3
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin uses shortcodes you can get the USGS river flow data for a site location.  It also includes a easy to use Site Code Search where you can seach by state and it will return all the site locations for the area.
+This plugin uses shortcodes you can get the USGS river flow data for a site location.  It also includes a easy to use Site Code Search.
 
 == Description ==
 
@@ -55,12 +55,20 @@ You can find the Site Code quickly and easily by searching for it based on state
 
 == Screenshots ==
 
-1. Site Code Search
+1. Site Code Search By State
 2. Admin Page
-3. Showing USGS Data in Widget
+3. Showing USGS Data as a Widget
 4. Showing USGS Without Graphs in a Post
 
 == Changelog ==
+= 1.0.6 =
+Tested with 3.9
+Updated plugin Description to fit on WordPress.org
+Updated ScreenShots to match 3.9
+
+= 1.0.4 =
+Updated Plugin Description
+
 = 1.0.3 = 
 Tested with 3.9
 
@@ -75,6 +83,15 @@ Updated the zip file name to match WordPress created zip file.
 Starting Version
 
 == Upgrade Notice ==
+= 1.0.6 =
+Tested with 3.9
+Updated plugin Description to fit on WordPress.org
+Updated ScreenShots to match 3.9
+
+= 1.0.4 =
+Verifies compatibility with Core 3.9
+Update to plugin Description
+
 = 1.0.3 = 
 Verifies compatibility with Core 3.9
 
