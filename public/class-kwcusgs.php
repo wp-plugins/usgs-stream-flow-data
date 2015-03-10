@@ -304,7 +304,6 @@ class kwc_usgs {
 			$data = str_replace( 'ns1:', '', $data );
 
 			$xml_tree = simplexml_load_string( $data );
-
 			if ( False === $xml_tree ) {
 				return 'Unable to parse USGS\'s XML';
 			}
@@ -329,12 +328,12 @@ class kwc_usgs {
 				} else if ( $site_data->values->value == -999999 ) {
 						$value = 'UNKNOWN';
 						$provisional = '-';
-					} else {
+				} else {
 					$desc = $site_data->variable->variableName;
 					switch ( $site_data->variable->variableCode ) {
 					case "00010":
 						$value  = $site_data->values->value;
-						$degf   = ( 9 / 5 ) * $value + 32;
+						$degf   = ( 9 / 5 ) * (float)$value + 32;
 						$watertemp      = $degf;
 						$watertempdesc  = "&deg; F";
 						$thePage .= "<li class='watertemp'>Water Temp: $watertemp $watertempdesc</li>";

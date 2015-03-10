@@ -3,12 +3,12 @@ Contributors: ChrisMKindred
 Donate link: http://www.kindredwebconsulting.com/wp-plugins/usgs
 Tags: USGS, River Flow, Stream Flow, Fly Fishing, Water Level
 Requires at least: 3.7
-Tested up to: 4.0
-Stable tag: 2.0.0
+Tested up to: 4.1.1
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin uses shortcodes you can get the USGS river flow data for a site location.  It also includes a easy to use Site Code Search.
+This plugin uses shortcodes so you can get the USGS river flow data for a site location.  It also includes a easy to use Site Code Search.
 
 == Description ==
 
@@ -65,6 +65,12 @@ There is a built in cache for the data.  The data will update every 15 minutes i
 4. Showing USGS Without Graphs in a Post
 
 == Changelog ==
+
+= 2.0.1 =
+Fixed issue with Temp Conversion
+Tested with WP 4.1.1
+Updated KWC Logo
+
 = 2.0.0 =
 Tested with 4.0
 Removed old MP5 references
