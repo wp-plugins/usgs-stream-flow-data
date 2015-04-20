@@ -321,7 +321,8 @@ class kwc_usgs {
 			$thePage = "<div class='KWC_USGS clearfix'>
 							<h3 class='header'>$SiteName</h3>
 								<ul class='sitevalues'>";
-
+			$graphflow = "";
+			$graphgage = "";
 			foreach ( $xml_tree->timeSeries as $site_data ) {
 				if ( $site_data->values->value == '' ) {
 					$value = '-';
@@ -345,6 +346,7 @@ class kwc_usgs {
 						$streamflow     = $value;
 						$streamflowdesc = $splitDesc[1];
 						$thePage .= "<li class='flow'>Flow: $streamflow $streamflowdesc</li>";
+						$graphflow = "<img src='http://waterdata.usgs.gov/nwisweb/graph?site_no=$location&parm_cd=00060" . "&" . rand() . "'/>";
 						break;
 
 					case "00065":
@@ -353,6 +355,7 @@ class kwc_usgs {
 						$gageheight = $value;
 						$gageheightdesc = $splitDesc[1];
 						$thePage .= "<li class='gageheight'>Water Level: $gageheight $gageheightdesc</li>";
+						$graphgage = "<img src='http://waterdata.usgs.gov/nwisweb/graph?site_no=$location&parm_cd=00065" . "&" . rand() . "'/>";
 						break;
 					}
 				}
@@ -361,8 +364,7 @@ class kwc_usgs {
 			if ( isset( $graph ) ) {
 				if ( $graph == 'show' ) {
 					$thePage .= "<div class='clearfix'>";
-					$thePage .= "<img src='http://waterdata.usgs.gov/nwisweb/graph?site_no=$location&parm_cd=00060" . "&" . rand() . "'/>";
-					$thePage .= "<img src='http://waterdata.usgs.gov/nwisweb/graph?site_no=$location&parm_cd=00065" . "&" . rand() . "'/>";
+					$thePage .= $graphgage . $graphflow;
 					$thePage .= "</div>";
 				}
 			}
